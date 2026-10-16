@@ -2,9 +2,12 @@
 
 > A peaceful, distraction-free productivity web app and installable PWA featuring morning briefings, Pomodoro focus sessions, smart alarms with puzzle challenges, synthesized ambient sounds, and gamified streak achievements.
 
-[![Open FocusFlow](https://img.shields.io/badge/Open%20App-http%3A%2F%2Flocalhost%3A5173%2F-7a9e6b?style=for-the-badge)](http://localhost:5173/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-7a9e6b?style=for-the-badge&logo=github)](https://abhimhere.github.io/focusFlow/)
+[![Local Preview](https://img.shields.io/badge/Local-http%3A%2F%2Flocalhost%3A5173%2F-c4956a?style=for-the-badge)](http://localhost:5173/)
 
-👉 **[Click here to open FocusFlow directly in your browser: http://localhost:5173/](http://localhost:5173/)**
+🚀 **[Click here to use FocusFlow live on GitHub Pages: https://abhimhere.github.io/focusFlow/](https://abhimhere.github.io/focusFlow/)**
+
+*(For local development: **[http://localhost:5173/](http://localhost:5173/)**)*
 
 ---
 

@@ -45,7 +45,7 @@ export function TimerPage() {
 
   const [remaining, setRemaining] = useState(0)
   const [showCelebration, setShowCelebration] = useState(false)
-  const rafRef = useRef<number>()
+  const rafRef = useRef<number | undefined>(undefined)
   const completedRef = useRef<Set<string>>(new Set())
   const tickCountRef = useRef(0)
   const lastTickRef = useRef(0)

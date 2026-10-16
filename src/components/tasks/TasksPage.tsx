@@ -33,7 +33,7 @@ export function TasksPage() {
     .filter(t => filterStatus === 'all' ? true : t.status === filterStatus)
     .sort((a, b) => {
       if (sortKey === 'time') return (a.plannedStartTime ?? '99:99').localeCompare(b.plannedStartTime ?? '99:99')
-      if (sortKey === 'priority') return priorityOrder[a.priority] - priorityOrder[b.priority]
+      if (sortKey === 'priority') return priorityOrder[a.priority as Priority] - priorityOrder[b.priority as Priority]
       return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
     })
 

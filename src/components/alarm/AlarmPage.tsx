@@ -128,7 +128,7 @@ export function AlarmPage() {
                   <div style={{ display: 'flex', gap: 4, marginTop: 6, flexWrap: 'wrap' }}>
                     {alarm.days.length === 0
                       ? <span style={{ fontSize: 11, padding: '1px 7px', borderRadius: 999, background: 'var(--bg-secondary)', color: 'var(--text-secondary)' }}>Every day</span>
-                      : alarm.days.map(d => (
+                      : alarm.days.map((d: DayOfWeek) => (
                         <span key={d} style={{ fontSize: 11, padding: '1px 7px', borderRadius: 999, background: 'var(--accent)', color: 'white' }}>
                           {DAY_NAMES[d]}
                         </span>

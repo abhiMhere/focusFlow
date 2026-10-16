@@ -2,7 +2,7 @@ import Dexie, { type Table } from 'dexie'
 import type {
   Task, PomodoroSession, Alarm, XPEvent, Achievement,
   UserProfile, FavoriteQuote, DailyStat
-} from '../types'
+} from '../../types'
 
 import { notifyDbChange } from './useLiveQuery'
 

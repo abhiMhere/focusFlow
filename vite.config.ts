@@ -8,7 +8,11 @@ import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
+const isGhPages = process.env.GITHUB_PAGES === 'true'
+const basePath = isGhPages ? '/focusFlow/' : '/'
+
 export default defineConfig({
+  base: basePath,
   plugins: [
     react(),
     tailwindcss(),
@@ -23,11 +27,11 @@ export default defineConfig({
         background_color: '#0f172a',
         display: 'standalone',
         orientation: 'portrait-primary',
-        scope: '/',
-        start_url: '/',
+        scope: basePath,
+        start_url: basePath,
         icons: [
-          { src: '/icons/icon-192.svg', sizes: '192x192', type: 'image/svg+xml' },
-          { src: '/icons/icon-512.svg', sizes: '512x512', type: 'image/svg+xml', purpose: 'any maskable' },
+          { src: 'icons/icon-192.svg', sizes: '192x192', type: 'image/svg+xml' },
+          { src: 'icons/icon-512.svg', sizes: '512x512', type: 'image/svg+xml', purpose: 'any maskable' },
         ],
       },
       workbox: {

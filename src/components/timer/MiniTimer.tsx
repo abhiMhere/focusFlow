@@ -12,7 +12,7 @@ export function MiniTimer() {
   const store = useTimerStore()
   const { settings } = useSettingsStore()
   const [remaining, setRemaining] = useState(0)
-  const rafRef = useRef<number>()
+  const rafRef = useRef<number | undefined>(undefined)
 
   const totalMs = (
     store.sessionType === 'focus' ? settings.focusDuration :
