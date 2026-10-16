@@ -1,0 +1,58 @@
+export const ACHIEVEMENT_DEFINITIONS = [
+  {
+    id: 'first_task',
+    title: 'First Step',
+    description: 'Complete your first task',
+    icon: '✅',
+    xp: 0,
+  },
+  {
+    id: 'first_session',
+    title: 'Deep Diver',
+    description: 'Complete your first Pomodoro session',
+    icon: '🍅',
+    xp: 0,
+  },
+  {
+    id: 'five_sessions',
+    title: 'Flow State',
+    description: 'Complete 5 focus sessions',
+    icon: '🔥',
+    xp: 0,
+  },
+  {
+    id: 'perfect_day',
+    title: 'Perfect Day',
+    description: 'Complete all planned tasks in a single day',
+    icon: '⭐',
+    xp: 0,
+  },
+  {
+    id: 'streak_3',
+    title: 'Building Momentum',
+    description: 'Maintain a 3-day streak',
+    icon: '📈',
+    xp: 0,
+  },
+  {
+    id: 'streak_7',
+    title: 'Week Warrior',
+    description: 'Maintain a 7-day streak',
+    icon: '🏆',
+    xp: 0,
+  },
+  {
+    id: 'hundred_minutes',
+    title: 'Century',
+    description: 'Accumulate 100 focused minutes',
+    icon: '⏱️',
+    xp: 0,
+  },
+  {
+    id: 'ten_tasks',
+    title: 'Task Master',
+    description: 'Complete 10 tasks total',
+    icon: '💪',
+    xp: 0,
+  },
+] as const
